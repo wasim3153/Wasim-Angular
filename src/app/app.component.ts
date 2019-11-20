@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TrainingSample';
+  nameofproject = 'Project Task Management Application';
 }
+
+// @Component({
+//   selector: 'menu-icons-example',
+//   templateUrl: 'menu-icons-example.html',
+//   styleUrls: ['menu-icons-example.css'],
+// })
+// export class MenuIconsExample {}

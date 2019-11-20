@@ -1,0 +1,21 @@
+<p>Add Members</p>
+<div mat-dialog-content>
+    <mat-form-field>
+        <input matInput placeholder="Enter Employee Name" #name required>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Enter Employee ID" #eid required>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Choose a role</mat-label>
+        <mat-select [(value)]="SelectedOptions">
+            <mat-option *ngFor="let role of roles" [value]="role">
+                {{role}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="AddMember(name.value,eid.value)">Ok</button>
+    <button mat-button (click)="closeDialog()">Cancel</button>
+</div>
